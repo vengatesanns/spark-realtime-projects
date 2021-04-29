@@ -1,0 +1,8 @@
+29/04/2021 03:30:32 PM INFO PopularMoviesByRatingsRDD$: Application Started....
+29/04/2021 03:31:01 PM INFO PopularMoviesByRatingsRDD$: Total Ratings by user against movies: 10000054
+29/04/2021 03:31:03 PM INFO PopularMoviesByRatingsRDD$: Movie ID: 27456, Movie Name: Shackleton's Antarctic Adventure (2001) 
+ Movie ID: 45208, Movie Name: RV (2006) 
+ Movie ID: 3456, Movie Name: Color of Paradise, The (Rang-e khoda) (1999) 
+ Movie ID: 6400, Movie Name: Murder on a Sunday Morning (Un coupable idéal) (2001) 
+ Movie ID: 3272, Movie Name: Bad Lieutenant (1992)
+29/04/2021 03:31:03 PM INFO PopularMoviesByRatingsRDD$: Application Stopped.
