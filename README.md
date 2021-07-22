@@ -16,8 +16,15 @@
 
 > **Spark Submit** 
  
- 1. **Local Mode**
+ 1. **Local Mode** *(For Windows keep back tick (`) or for Linux replace with (\\))*
  
       ```
-        spark-submit --master local[*] --class com.hackprotech.FirstOwnerYamahaHeavyPowerBikes --files src/main/resources/env/local.conf  --conf "spark.driver.extraJavaOptions=-Dconfig.file=src/main/resources/env/local.conf"  target/scala-2.12/spark-realtime-projects-assembly-1.0.jar
+        spark-submit `
+        --master local[*] `
+        --files "log4j.properties" `
+        --conf "spark.driver.extraJavaOptions=-Dlog4j.configuration=file:log4j.properties -Dspark.yarn.app.container.log.dir=app-logs -Dlogfile.name=bikesss" `
+        --conf "spark.excutor.extraJavaOptions=-Dlog4j.configuration=file:log4j.properties -Dspark.yarn.app.container.log.dir=app-logs -Dlogfile.name=bikesss" `
+        --conf "outputPath=target/vehicles" `
+        --class com.hackprotech.FirstOwnerYamahaPowerBikesDF `
+        target/scala-2.12/spark-realtime-projects-assembly-1.0.jar
       ```

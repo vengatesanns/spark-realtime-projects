@@ -18,6 +18,7 @@ object FirstOwnerYamahaPowerBikesDF extends App {
 
   val bikeSourceDF1 = sparkSession.sql("select * from used_bikes_tbl")
   bikeSourceDF1.show(false)
-  bikeSourceDF1.write.mode(SaveMode.Append).csv(writePath)
+  bikeSourceDF1.write.mode(SaveMode.Overwrite).csv(writePath)
+  sparkSession.stop()
 
 }
