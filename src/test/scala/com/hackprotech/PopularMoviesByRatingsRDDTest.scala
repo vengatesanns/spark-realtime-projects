@@ -2,12 +2,13 @@ package com.hackprotech
 
 import com.hackprotech.PopularMoviesByRatingsRDD.{findPopularRatingMovies, loadMoviesMasterDetails}
 import org.apache.spark.SparkContext
-import org.scalatest.BeforeAndAfterAll
+import org.scalatest.{BeforeAndAfterAll, Ignore}
 import org.scalatest.funsuite.AnyFunSuite
 
 /**
  * @author Vengatesan Nagarajan
  */
+@Ignore
 class PopularMoviesByRatingsRDDTest extends AnyFunSuite with BeforeAndAfterAll {
 
   @transient var sparkContext: SparkContext = _
