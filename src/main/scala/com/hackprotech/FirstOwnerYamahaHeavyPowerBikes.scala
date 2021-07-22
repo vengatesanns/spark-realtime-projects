@@ -1,16 +1,14 @@
 package com.hackprotech
 
-import com.hackprotech.ConfigLoader.getSparkConfig
+import com.hackprotech.ConfigLoader.getSparkSession
 import org.apache.log4j.Logger
+/*
 
 object FirstOwnerYamahaHeavyPowerBikes extends App {
 
   @transient lazy val logger = Logger.getLogger(getClass.getName)
 
-  val sparkContext = getSparkConfig.sparkContext
-
-  val readPath = args(0)
-  val writePath = args(1)
+  val sparkContext = getSparkSession
 
   val sourceRDD = sparkContext.textFile(readPath)
   val bikesRDD = sourceRDD.map(line => line.split(",").map(bike => bike.trim))
@@ -22,3 +20,4 @@ object FirstOwnerYamahaHeavyPowerBikes extends App {
   logger.info(yamahaBikesRDD.collect().map(bike => s" Bike Name - ${bike._1}, Price - ${bike._2}").mkString(" \n "))
 
 }
+*/
