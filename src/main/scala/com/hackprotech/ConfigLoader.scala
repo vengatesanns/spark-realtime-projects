@@ -4,6 +4,9 @@ import com.typesafe.config.{Config, ConfigFactory}
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.SparkSession
 
+/**
+ * @author Vengat
+ */
 object ConfigLoader {
 
   def getSparkConfig: Config = {
