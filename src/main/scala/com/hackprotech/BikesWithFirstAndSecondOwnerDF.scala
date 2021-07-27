@@ -12,7 +12,7 @@ object BikesWithFirstAndSecondOwnerDF extends App {
 
   @transient lazy val logger = Logger.getLogger(getClass.getName)
 
-  val (sparkSession, config) = getSparkSession
+  val (sparkSession, config) = getSparkSession(args)
 
   val readPath = config.getString("inputPath");
   val writePath = config.getString("outputPath")
