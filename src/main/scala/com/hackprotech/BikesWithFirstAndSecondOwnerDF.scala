@@ -26,13 +26,12 @@ object BikesWithFirstAndSecondOwnerDF extends App {
       |where owner in ('First Owner', 'Second Owner')
       |and age = 3
       |and price between 50000 and 100000
-      |and brand = 'Yamaha'
       |group by bike_name, brand
       |""".stripMargin)
 
 
   resultDF.show(false)
-  resultDF.write.mode(SaveMode.Overwrite).csv(writePath)
+  resultDF.coalesce(1).write.mode(SaveMode.Overwrite).partitionBy("brand").csv(writePath)
   sparkSession.stop()
 
 }
