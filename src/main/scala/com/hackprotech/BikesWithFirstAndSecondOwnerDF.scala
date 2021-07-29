@@ -24,7 +24,7 @@ object BikesWithFirstAndSecondOwnerDF extends App {
     """
       |select bike_name, brand, count(*) as count from used_bikes_tbl
       |where owner in ('First Owner', 'Second Owner')
-      |and age = 3
+      |and age < 3
       |and price between 50000 and 100000
       |group by bike_name, brand
       |""".stripMargin)

@@ -28,3 +28,11 @@
         --class com.hackprotech.FirstOwnerYamahaPowerBikesDF `
         target/scala-2.12/spark-realtime-projects-assembly-1.0.jar
       ```
+
+> **How to setup Multinode Cluster with Apache Spark and Apache Hadoop**
+
+1. Create 3 Virtual machines in **Cloud(GCS, AWS., etc)** or **Local(VMware, VirtualBox)**
+2. Need to form the cluster by connecting all maching together using **SSH**
+3. **Download Apache Hadoop and Apache Spark in Machine**
+4. Edit the **core-site.xml** file in hadoop.3.3.1/etc folder
+5. 
