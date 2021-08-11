@@ -11,7 +11,7 @@
 > **Realtime UseCase** 
 
 1. Find Yamaha Power Bikes (cc greater than 150) and filter the first owner
-2. Find how many distinct bike brands by first owner and second owner, age within 3 and price range between 40K to 1 lakh
+2. Find how many distinct bike brands by not with "Fourth Owner Or More", age within 3 and price range between 40K to 1 lakh
  
 
 > **Spark Submit** 
