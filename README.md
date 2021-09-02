@@ -35,4 +35,40 @@
 2. Need to form the cluster by connecting all maching together using **SSH**
 3. **Download Apache Hadoop and Apache Spark in Machine**
 4. Edit the **core-site.xml** file in hadoop.3.3.1/etc folder
-5. 
+
+
+> **Google Cloud Platform(GCP)**
+1. Delete GCS Instance which having delete protection
+````
+gcloud compute instances update <INSTANCE_PATH> --no-deletion-protection
+gcloud compute instances delete <instance-path>
+````
+
+
+> **Big Query (GCP) - Consumption Layer**
+1. Install google SDK for gcloud command line
+2. Create DataSets (kind of Databases)
+3. Create Table using commands
+````
+bq mk -t --schema schema.json flights.flights_partitioned_JSON
+````
+4. Load Data into BigQuery Table 
+````
+bq load --source_format=NEWLINE_DELIMITED_JSON  --autodetect \
+flights.flights_JSON \
+gs://vn-big-query-bucket/flights/json-files/*
+_________________________________________________________________________________________
+bq load --source_format=CSV  --autodetect `
+flights.flights_CSV `
+gs://vn-big-query-bucket/flights/csv-files/*
+_________________________________________________________________________________________
+bq load --source_format=CSV  --autodetect \
+flights.flights_CSV \
+./2019-04-27.csv
+_________________________________________________________________________________________
+bq load --source_format=NEWLINE_DELIMITED_JSON --autodetect --time_partitioning_field flight_date `
+flights.flights_partitioned_JSON `
+./2019-04-29.json
+````
+
+
