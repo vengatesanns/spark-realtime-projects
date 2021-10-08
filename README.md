@@ -8,6 +8,12 @@
 -Dlogfile.name=bikes
 ```
 
+> **Program Arguments
+
+```
+configFile=application-local.conf
+```
+
 > **Realtime UseCase** 
 
 1. Find Yamaha Power Bikes (cc greater than 150) and filter the first owner

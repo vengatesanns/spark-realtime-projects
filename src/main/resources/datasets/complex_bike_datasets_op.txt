@@ -1,0 +1,111 @@
+Brand = TVS                                                        age = less than or equal to 2
+Owner = First Owner
++---------------------------------------------------------------+--------+-------------------+----------+-----------+---+-----+-----+
+|bike_name                                                      |price   |city               |kms_driven|owner      |age|power|brand|
++---------------------------------------------------------------+--------+-------------------+----------+-----------+---+-----+-----+
+|TVS Apache RTR 160 4V DISC ABS BS6                             |85000.0 |Hyderabad          |16000.0   |First Owner|2.0|160.0|TVS  |
+|TVS Apache RTR 160 4V Disc                                     |78700.0 |Rudrapur           |3710.0    |First Owner|2.0|160.0|TVS  |
+|TVS Apache RTR 200 4V ABS Race Edition                         |108500.0|Delhi              |10000.0   |First Owner|2.0|200.0|TVS  |
+|TVS Apache RTR 200 4V ABS Race Edition                         |108500.0|Delhi              |10000.0   |First Owner|2.0|200.0|TVS  |
+|TVS Apache RTR 160 4V DISC ABS                                 |87000.0 |Delhi              |7000.0    |First Owner|2.0|160.0|TVS  |
+|TVS Apache RTR 160 4V DRUM ABS                                 |85000.0 |Gurgaon            |7000.0    |First Owner|2.0|160.0|TVS  |
+|TVS Apache RTR 160 4V DISC ABS                                 |91800.0 |Delhi              |1050.0    |First Owner|2.0|160.0|TVS  |
+|TVS Apache RTR 160 4V DISC ABS                                 |89000.0 |Delhi              |3000.0    |First Owner|2.0|160.0|TVS  |
+|TVS Apache RTR 160 4V Disc                                     |74700.0 |Gautam Buddha Nagar|20194.0   |First Owner|2.0|160.0|TVS  |
+|TVS Apache RTR 160 4V Disc                                     |74700.0 |Gautam Buddha Nagar|20194.0   |First Owner|2.0|160.0|TVS  |
+|TVS Apache RTR 200 4V Carburetor Race Edition 2.0              |93500.0 |Bangalore          |2500.0    |First Owner|2.0|200.0|TVS  |
+|TVS Apache RTR 200 4V Dual Channel ABS BS6                     |130000.0|Bangalore          |1300.0    |First Owner|1.0|200.0|TVS  |
+|TVS Apache RTR 160 4V DISC ABS BS6                             |98000.0 |Jaipur             |749.0     |First Owner|1.0|160.0|TVS  |
+|TVS Apache RR310                                               |200000.0|Mumbai             |4400.0    |First Owner|2.0|310.0|TVS  |
+|TVS Apache RTR 200 4V ABS Race Edition                         |125000.0|Hyderabad          |530.0     |First Owner|2.0|200.0|TVS  |
+|TVS Apache RTR 160cc Matt Red Rear Disc                        |76000.0 |Delhi              |8000.0    |First Owner|2.0|160.0|TVS  |
+|TVS Apache RTR 160cc Matt Red Rear Disc                        |76000.0 |Delhi              |8000.0    |First Owner|2.0|160.0|TVS  |
+|TVS Apache RTR 200 4V Carburetor Pirelli Tyres Race Edition 2.0|122000.0|Chennai            |3100.0    |First Owner|2.0|200.0|TVS  |
+|TVS Apache RR310 Slipper Clutch                                |224000.0|Vadodara           |3900.0    |First Owner|2.0|310.0|TVS  |
+|TVS Apache RTR 200 4V Carburetor Pirelli Tyres Race Edition 2.0|98500.0 |Delhi              |2800.0    |First Owner|2.0|200.0|TVS  |
+|TVS Apache RTR 160 4V DISC ABS                                 |89135.0 |Delhi              |2800.0    |First Owner|2.0|160.0|TVS  |
+|TVS Apache RTR 180cc                                           |88000.0 |Gurgaon            |900.0     |First Owner|2.0|180.0|TVS  |
+|TVS Apache RTR 200 4V Carburetor Pirelli Tyres Race Edition 2.0|122000.0|Chennai            |3100.0    |First Owner|2.0|200.0|TVS  |
+|TVS Apache RTR 200 4V ABS                                      |92000.0 |Mumbai             |4500.0    |First Owner|2.0|200.0|TVS  |
+|TVS Apache RTR 200 4V ABS                                      |92000.0 |Mumbai             |4500.0    |First Owner|2.0|200.0|TVS  |
+|TVS Victor 110cc Disc SBT                                      |54000.0 |Delhi              |6000.0    |First Owner|2.0|110.0|TVS  |
+|TVS Victor 110cc Disc SBT                                      |54000.0 |Delhi              |6000.0    |First Owner|2.0|110.0|TVS  |
+|TVS Apache RTR 160 4V DISC ABS                                 |85000.0 |Delhi              |11496.0   |First Owner|2.0|160.0|TVS  |
+|TVS Apache RTR 160 4V DISC ABS                                 |94000.0 |Ahmedabad          |893.0     |First Owner|2.0|160.0|TVS  |
+|TVS Apache RTR 160cc White Race Edition Rear Disc              |82000.0 |Bangalore          |52198.0   |First Owner|2.0|160.0|TVS  |
+|TVS Apache RTR 160 4V Carburetor With Rear Disc                |85000.0 |Mumbai             |6821.0    |First Owner|2.0|160.0|TVS  |
+|TVS Apache RTR 160 4V DISC ABS                                 |85000.0 |Delhi              |11496.0   |First Owner|2.0|160.0|TVS  |
+|TVS Apache RTR 160 4V Disc                                     |92000.0 |Mumbai             |14289.0   |First Owner|2.0|160.0|TVS  |
+|TVS Star City Plus 110cc                                       |51000.0 |Ahmedabad          |12000.0   |First Owner|2.0|110.0|TVS  |
+|TVS Apache RTR 160 4V Carburetor                               |90000.0 |Ghaziabad          |2672.0    |First Owner|2.0|160.0|TVS  |
+|TVS Apache RTR 160 4V Carburetor                               |90000.0 |Ghaziabad          |2672.0    |First Owner|2.0|160.0|TVS  |
+|TVS Apache RTR 200 4V ABS Race Edition                         |106000.0|Delhi              |1890.0    |First Owner|2.0|200.0|TVS  |
+|TVS Apache RTR 180cc                                           |90000.0 |Ghaziabad          |3095.0    |First Owner|2.0|180.0|TVS  |
+|TVS Apache RTR 200 4V FI                                       |102000.0|Thane              |8120.0    |First Owner|2.0|200.0|TVS  |
+|TVS Apache RTR 180cc                                           |90000.0 |Ghaziabad          |3095.0    |First Owner|2.0|180.0|TVS  |
+|TVS Apache RTR 200 4V ABS Race Edition                         |128000.0|Bangalore          |4000.0    |First Owner|2.0|200.0|TVS  |
+|TVS Apache RTR 160 4V Carburetor                               |90700.0 |Delhi              |900.0     |First Owner|2.0|160.0|TVS  |
+|TVS Apache RR310                                               |220000.0|Noida              |5432.0    |First Owner|2.0|310.0|TVS  |
+|TVS Apache RR310                                               |220000.0|Noida              |5432.0    |First Owner|2.0|310.0|TVS  |
+|TVS Apache RTR 160 4V Carburetor                               |86000.0 |Faridabad          |15228.0   |First Owner|2.0|160.0|TVS  |
+|TVS Apache RTR 200 4V Race Edition 2.0                         |106000.0|Mumbai             |7157.0    |First Owner|2.0|200.0|TVS  |
+|TVS Sport 100cc                                                |46000.0 |Faridabad          |6222.0    |First Owner|2.0|100.0|TVS  |
+|TVS Apache RTR 180cc                                           |70000.0 |Jaipur             |207102.0  |First Owner|2.0|180.0|TVS  |
+|TVS Apache RTR 200 4V ABS Race Edition                         |120000.0|Mumbai             |4442.0    |First Owner|2.0|200.0|TVS  |
+|TVS Radeon 110cc Drum SBT                                      |58000.0 |Delhi              |4020.0    |First Owner|2.0|110.0|TVS  |
++---------------------------------------------------------------+--------+-------------------+----------+-----------+---+-----+-----+
+
+Brand = TVS                                                        age = greater than 2
+Owner = Second and Third Owner
++-----------------------------------------------+--------+-----------+----------+------------+----+-----+-----+
+|bike_name                                      |price   |city       |kms_driven|owner       |age |power|brand|
++-----------------------------------------------+--------+-----------+----------+------------+----+-----+-----+
+|TVS Apache 150cc                               |9350.0  |Bangalore  |39822.0   |Second Owner|13.0|150.0|TVS  |
+|TVS Apache 150cc                               |9350.0  |Bangalore  |39822.0   |Second Owner|13.0|150.0|TVS  |
+|TVS Apache RTR 180cc                           |40000.0 |Delhi      |16688.0   |Second Owner|6.0 |180.0|TVS  |
+|TVS Apache RTR 200 4V Fi                       |70000.0 |Delhi      |9761.0    |Second Owner|5.0 |200.0|TVS  |
+|TVS Apache RTR 200 4V Fi                       |70000.0 |Delhi      |9761.0    |Second Owner|5.0 |200.0|TVS  |
+|TVS Apache RTR 160cc                           |43000.0 |Delhi      |28454.0   |Second Owner|4.0 |160.0|TVS  |
+|TVS Flame 125cc                                |25000.0 |Jammu      |35000.0   |Second Owner|12.0|125.0|TVS  |
+|TVS Flame 125cc                                |25000.0 |Jammu      |35000.0   |Second Owner|12.0|125.0|TVS  |
+|TVS Apache RTR 160cc                           |18000.0 |Mumbai     |35408.0   |Second Owner|14.0|160.0|TVS  |
+|TVS Apache RTR 180cc ABS                       |48000.0 |Delhi      |20000.0   |Second Owner|5.0 |180.0|TVS  |
+|TVS Apache RTR 180cc ABS                       |48000.0 |Delhi      |20000.0   |Second Owner|5.0 |180.0|TVS  |
+|TVS Apache RTR 160 4V Disc                     |65000.0 |Delhi      |10000.0   |Second Owner|3.0 |160.0|TVS  |
+|TVS Apache RTR 160 4V Disc                     |65000.0 |Delhi      |10000.0   |Second Owner|3.0 |160.0|TVS  |
+|TVS Apache RTR 180cc                           |70000.0 |Delhi      |7000.0    |Second Owner|3.0 |180.0|TVS  |
+|TVS Apache RTR 180cc ABS                       |47500.0 |Mumbai     |38311.0   |Second Owner|4.0 |180.0|TVS  |
+|TVS Apache RTR 180cc ABS                       |47500.0 |Mumbai     |38311.0   |Second Owner|4.0 |180.0|TVS  |
+|TVS Apache RTR 180cc                           |49999.0 |Delhi      |20000.0   |Second Owner|6.0 |180.0|TVS  |
+|TVS Apache RTR 180cc                           |47000.0 |Faridabad  |24000.0   |Second Owner|4.0 |180.0|TVS  |
+|TVS Apache RTR 180cc                           |45000.0 |Bangalore  |26500.0   |Second Owner|7.0 |180.0|TVS  |
+|TVS Apache RTR 160cc                           |50000.0 |Ghaziabad  |22932.0   |Second Owner|9.0 |160.0|TVS  |
+|TVS Apache RTR 200 4V ABS Race Edition         |85000.0 |Delhi      |3900.0    |Second Owner|3.0 |200.0|TVS  |
+|TVS Apache RTR 160cc                           |50000.0 |Ghaziabad  |22932.0   |Second Owner|9.0 |160.0|TVS  |
+|TVS Apache RTR 160cc                           |19000.0 |Ghaziabad  |71359.0   |Second Owner|13.0|160.0|TVS  |
+|TVS Apache RTR 200 4V Fi                       |65949.0 |Hyderabad  |25931.0   |Second Owner|5.0 |200.0|TVS  |
+|TVS Apache RTR 200 4V Fi                       |65949.0 |Hyderabad  |25931.0   |Second Owner|5.0 |200.0|TVS  |
+|TVS Apache RTR 160cc                           |31000.0 |Ahmedabad  |37594.0   |Third Owner |6.0 |160.0|TVS  |
+|TVS Jive 110cc                                 |10000.0 |Kanchipuram|35000.0   |Second Owner|11.0|110.0|TVS  |
+|TVS Apache RTR 180cc                           |72000.0 |Delhi      |7000.0    |Second Owner|3.0 |180.0|TVS  |
+|TVS Star City 110cc                            |18000.0 |Tiruvallur |70000.0   |Second Owner|15.0|110.0|TVS  |
+|TVS Apache RTR 180cc                           |72000.0 |Delhi      |7000.0    |Second Owner|3.0 |180.0|TVS  |
+|TVS Apache RTR 160cc                           |16000.0 |Dehradun   |75000.0   |Third Owner |14.0|160.0|TVS  |
+|TVS Star Sport 100cc                           |22800.0 |Jhansi     |17000.0   |Second Owner|5.0 |100.0|TVS  |
+|TVS Apache RTR 160cc                           |28000.0 |Lucknow    |22000.0   |Second Owner|8.0 |160.0|TVS  |
+|TVS Apache RTR 160 4V Carburetor With Rear Disc|80000.0 |Delhi      |11877.0   |Second Owner|3.0 |160.0|TVS  |
+|TVS Apache RTR 160cc                           |28000.0 |Lucknow    |22000.0   |Second Owner|8.0 |160.0|TVS  |
+|TVS Apache RTR 160cc                           |16000.0 |Dehradun   |75000.0   |Third Owner |14.0|160.0|TVS  |
+|TVS Apache RTR 200 4V FI                       |65000.0 |Sonepat    |8800.0    |Third Owner |4.0 |200.0|TVS  |
+|TVS Apache RTR 160cc                           |49500.0 |Mehsana    |20000.0   |Second Owner|4.0 |160.0|TVS  |
+|TVS Apache RTR 160cc                           |23000.0 |Vellore    |32500.0   |Second Owner|11.0|160.0|TVS  |
+|TVS Apache RTR 160cc                           |41000.0 |Delhi      |26528.0   |Third Owner |5.0 |160.0|TVS  |
+|TVS Apache RTR 160cc                           |41000.0 |Delhi      |15880.0   |Third Owner |5.0 |160.0|TVS  |
+|TVS Apache RTR 160 4V Disc                     |65000.0 |Ghaziabad  |10906.0   |Second Owner|3.0 |160.0|TVS  |
+|TVS Star Sport 100cc                           |8000.0  |Faridabad  |49730.0   |Second Owner|11.0|100.0|TVS  |
+|TVS Apache RR310                               |220000.0|Aligarh    |2402.0    |Second Owner|3.0 |310.0|TVS  |
+|TVS Apache RR310                               |220000.0|Aligarh    |2402.0    |Second Owner|3.0 |310.0|TVS  |
+|TVS Apache RTR 160cc                           |23000.0 |Chennai    |34000.0   |Second Owner|11.0|160.0|TVS  |
+|TVS Apache RTR 160cc                           |51000.0 |Jaipur     |23000.0   |Second Owner|6.0 |160.0|TVS  |
+|TVS Apache RTR 160cc                           |60000.0 |Hyderabad  |20482.0   |Second Owner|4.0 |160.0|TVS  |
++-----------------------------------------------+--------+-----------+----------+------------+----+-----+-----+
