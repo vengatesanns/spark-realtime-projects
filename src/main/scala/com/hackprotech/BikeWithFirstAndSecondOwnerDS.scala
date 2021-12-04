@@ -9,6 +9,7 @@ import org.apache.spark.sql.{Dataset, SaveMode}
 object BikeWithFirstAndSecondOwnerDS extends App {
 
   Logger.getLogger("org").setLevel(Level.ERROR)
+
   case class Bike(model: String, price: Double, owner: String, age: Double, power: Double, brand: String)
 
   @transient lazy val logger = Logger.getLogger(getClass.getName)
@@ -34,7 +35,7 @@ object BikeWithFirstAndSecondOwnerDS extends App {
   val bikeSourceDF: Dataset[Bike] = sparkSession.read
     .option("header", "true")
     .schema(bikeSchema)
-    .csv(readPath).as[Bike].repartition(5)
+    .csv(readPath).as[Bike].repartition(1)
 
 
   val resultDF = bikeSourceDF
@@ -43,11 +44,13 @@ object BikeWithFirstAndSecondOwnerDS extends App {
       col("owner") =!= "Fourth Owner Or More"
         && col("age") <= 3
         && col("price").between(40000, 100000)
-        && col("brand") === "Yamaha")
+        && col("brand") === "Yamaha"
+    )
     .groupBy(col("model"), col("brand"), col("owner")).count()
 
   resultDF.printSchema()
   resultDF.show(false)
+  println(resultDF.count())
   resultDF.write.mode(SaveMode.Overwrite).csv(writePath)
   sparkSession.stop()
 
