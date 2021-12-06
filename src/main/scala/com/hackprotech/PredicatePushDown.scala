@@ -1,16 +1,15 @@
 package com.hackprotech
 
+
 import com.hackprotech.ConfigLoader.getSparkSession
 import org.apache.log4j.{Level, Logger}
+import org.apache.spark.sql.SaveMode
 import org.apache.spark.sql.functions.{col, spark_partition_id}
 import org.apache.spark.sql.types._
-import org.apache.spark.sql.{Dataset, SaveMode}
 
-object BikeWithFirstAndSecondOwnerDS extends App {
+object PredicatePushDown extends App {
 
   Logger.getLogger("org").setLevel(Level.ERROR)
-
-  case class Bike(model: String, price: Double, owner: String, age: Double, power: Double, brand: String)
 
   @transient lazy val logger = Logger.getLogger(getClass.getName)
 
@@ -24,18 +23,22 @@ object BikeWithFirstAndSecondOwnerDS extends App {
     StructField("power", DoubleType),
     StructField("brand", StringType)
   ))
+  val targetBikeSchema = StructType(Array(
+    StructField("model", StringType),
+    StructField("owner", StringType),
+    StructField("count", IntegerType),
+    StructField("brand", StringType)
+  ))
 
   val (sparkSession, config) = getSparkSession(args)
 
   val readPath = config.getString("inputPath");
   val writePath = config.getString("outputPath")
 
-  import sparkSession.implicits._
-
-  val bikeSourceDF: Dataset[Bike] = sparkSession.read
+  val bikeSourceDF = sparkSession.read
     .option("header", "true")
     .schema(bikeSchema)
-    .csv(readPath).as[Bike]
+    .csv(readPath)
 
 
   val resultDF = bikeSourceDF
@@ -44,16 +47,32 @@ object BikeWithFirstAndSecondOwnerDS extends App {
       col("owner") =!= "Fourth Owner Or More"
         && col("age") <= 3
         && col("price").between(40000, 100000)
-        && col("brand") === "Yamaha"
+      //        && col("brand") === "Yamaha"
     )
     .groupBy(col("model"), col("brand"), col("owner")).count()
 
   resultDF.printSchema()
   resultDF.show(false)
+
+  //  Partitions
   println(resultDF.count())
   println(resultDF.rdd.getNumPartitions)
   resultDF.groupBy(spark_partition_id()).count().show(false)
-  resultDF.write.mode(SaveMode.Overwrite).csv(writePath)
+
+  //  Partition Pruning
+  resultDF.write.mode(SaveMode.Overwrite)
+    .partitionBy("brand")
+    .csv(writePath)
+
+  //  Predicate Pushed Down
+  val sourceDF = sparkSession.read.schema(targetBikeSchema).csv(writePath)
+    .filter(col("brand") === "Honda")
+    .filter(col("model").startsWith("Honda CB"))
+  sourceDF.explain
+  sourceDF.show(false)
+
+
   sparkSession.stop()
 
 }
+
