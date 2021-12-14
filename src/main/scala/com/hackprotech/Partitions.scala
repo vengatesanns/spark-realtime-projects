@@ -1,16 +1,18 @@
 package com.hackprotech
 
+import org.apache.spark.SparkConf
 import org.apache.spark.sql.SparkSession
 
 object Partitions extends App {
 
-  val spark = SparkSession.builder().appName("Sample")
-    .master("local[10]").getOrCreate()
+  val sparkConf = new SparkConf()
+  sparkConf.setAppName("Partitions")
+  sparkConf.setMaster("local[10]")
 
-  val sourceRDD = spark.sparkContext
-    //    .parallelize(Seq(1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000))
-    .parallelize(Range(0, 10))
+  val spark = SparkSession.builder().config(sparkConf).getOrCreate()
 
-  sourceRDD.saveAsTextFile("sample_op")
+  val numbersRDD = spark.sparkContext.parallelize(Range(0, 5))
+
+  numbersRDD.saveAsTextFile("sample_op")
 
 }
