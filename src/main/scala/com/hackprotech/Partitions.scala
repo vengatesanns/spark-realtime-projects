@@ -7,12 +7,12 @@ object Partitions extends App {
 
   val sparkConf = new SparkConf()
   sparkConf.setAppName("Partitions")
-  sparkConf.setMaster("local[10]")
+  sparkConf.setMaster("local[100]")
 
   val spark = SparkSession.builder().config(sparkConf).getOrCreate()
 
-  val numbersRDD = spark.sparkContext.parallelize(Range(0, 5))
+  val numbersRDD = spark.sparkContext.parallelize(Range(0, 10))
 
-  numbersRDD.saveAsTextFile("sample_op")
+  numbersRDD.saveAsTextFile("target/sample_op")
 
 }

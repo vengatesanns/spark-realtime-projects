@@ -1,8 +1,9 @@
+/*
 package com.hackprotech
 
 import com.hackprotech.ConfigLoader.getSparkSession
 import org.apache.log4j.Logger
-/*
+
 
 object FirstOwnerYamahaHeavyPowerBikes extends App {
 
@@ -20,4 +21,5 @@ object FirstOwnerYamahaHeavyPowerBikes extends App {
   logger.info(yamahaBikesRDD.collect().map(bike => s" Bike Name - ${bike._1}, Price - ${bike._2}").mkString(" \n "))
 
 }
+
 */
