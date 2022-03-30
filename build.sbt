@@ -1,19 +1,19 @@
 name := "spark-realtime-projects"
 organization := "com.hackprotech"
 version := "2.0.0"
-autoScalaLibrary := false
+autoScalaLibrary := true
 scalaVersion := "2.13.8"
 
 val sparkVersion = "3.2.0"
 
 val sparkDependencies = Seq(
-  "org.apache.spark" %% "spark-core" % sparkVersion % "provided",
-  "org.apache.spark" %% "spark-sql" % sparkVersion % "provided",
-  "com.typesafe" % "config" % "1.4.1"
+  "org.apache.spark" %% "spark-core" % sparkVersion,
+  "org.apache.spark" %% "spark-sql" % sparkVersion,
+  "com.typesafe" % "config" % "1.4.2"
 )
 
 val testDependencies = Seq(
-  "org.scalatest" %% "scalatest" % "3.2.7" % Test
+  "org.scalatest" %% "scalatest" % "3.2.11" % Test
 )
 
 libraryDependencies ++= sparkDependencies ++ testDependencies
