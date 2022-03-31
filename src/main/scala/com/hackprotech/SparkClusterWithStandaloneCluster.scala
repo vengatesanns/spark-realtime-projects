@@ -11,8 +11,8 @@ object SparkClusterWithStandaloneCluster {
     val spark = SparkSession.builder().appName("test").getOrCreate()
 
     val testRDD = spark.read.csv("Used_Bikes.csv")
-    testRDD.foreach(println)
-    readLine()
+//    testRDD.foreach(println)
+//    readLine()
 
   }
 

@@ -1,14 +1,14 @@
 name := "spark-realtime-projects"
 organization := "com.hackprotech"
-version := "2.0.0"
+version := "2.1.0"
 autoScalaLibrary := true
-scalaVersion := "2.13.8"
+scalaVersion := "2.12.15"
 
 val sparkVersion = "3.2.0"
 
 val sparkDependencies = Seq(
-  "org.apache.spark" %% "spark-core" % sparkVersion,
-  "org.apache.spark" %% "spark-sql" % sparkVersion,
+  "org.apache.spark" %% "spark-core" % sparkVersion % "provided",
+  "org.apache.spark" %% "spark-sql" % sparkVersion % "provided",
   "com.typesafe" % "config" % "1.4.2"
 )
 
