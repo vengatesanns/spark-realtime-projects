@@ -53,7 +53,7 @@ object RailwayScheduleDetailsDF {
     println("Final train and schedule related details processed successfully!!!")
 
     finalTrainDetails.write.mode(SaveMode.Overwrite)
-      .partitionBy("state")
+      //      .partitionBy("state")
       .option("header", "true")
       .csv(s"${ROOT_FOLDER}/target/actual_schedules")
 
