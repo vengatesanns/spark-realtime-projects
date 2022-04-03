@@ -30,7 +30,6 @@ object RailwayScheduleDetailsDF {
 
     val selectedColsSrcSchedulesDF = sourceSchedulesDF
       .select("departure", "id", "station_code", "train_number")
-    //      .where(col("train_number") === 310956)
 
     println("Source Schedules => files read and selected columns fetched successfully!!!")
 
@@ -57,6 +56,8 @@ object RailwayScheduleDetailsDF {
       .option("header", "true")
       .csv(s"${ROOT_FOLDER}/target/actual_schedules")
 
+    finalTrainDetails.show(false)
+    println(s"FinalDF total count => ${finalTrainDetails.count()} records")
     println("Final train schedule details persisted successfully as CSV format and partitioned by state!!!")
 
   }
