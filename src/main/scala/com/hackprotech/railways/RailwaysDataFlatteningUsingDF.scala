@@ -14,15 +14,15 @@ object RailwaysDataFlatteningUsingDF {
 
   Logger.getLogger("org").setLevel(Level.ERROR)
 
-  val ROOT_FOLDER = "/home/vengat/big_data/projects/spark_jars"
-  //    val ROOT_FOLDER = "src/main/resources"
+  //  val ROOT_FOLDER = "/home/vengat/big_data/projects/spark_jars"
+  val ROOT_FOLDER = "src/main/resources"
 
   def main(args: Array[String]): Unit = {
 
     //    Create SparkConf
     val sparkConf = new SparkConf()
     sparkConf.setMaster("local")
-    sparkConf.setAppName("RailwaysDataSeggregationDF")
+    sparkConf.setAppName("Railways_Data_Flattening_Using_DF")
 
     //    Create Spark Session
     val spark = SparkSession.builder().config(sparkConf).getOrCreate()
@@ -85,6 +85,7 @@ object RailwaysDataFlatteningUsingDF {
       val flattenedSchedulesDF = flatteningSchedulesJson()
       //    Persist the schedules details as orc file
       flattenedSchedulesDF.write.mode(SaveMode.Overwrite).orc(s"$ROOT_FOLDER/target/schedules/")
+      flattenedSchedulesDF.show(false)
       println("Schedule details persisted successfully!")
 
       val flattenedTrainsDF = flatteningTrainsJson()
