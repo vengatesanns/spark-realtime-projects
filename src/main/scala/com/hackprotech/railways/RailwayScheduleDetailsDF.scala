@@ -15,8 +15,8 @@ object RailwayScheduleDetailsDF {
 
   Logger.getLogger("org").setLevel(Level.ERROR)
 
-  //  val ROOT_FOLDER = "/home/vengat/big_data/projects/spark_jars"
-  val ROOT_FOLDER = "src/main/resources"
+  val ROOT_FOLDER = "/home/vengat/big_data/projects/spark_jars"
+  //  val ROOT_FOLDER = "src/main/resources"
 
   val sparkConf = new SparkConf()
   sparkConf.setAppName("Railway_Schedule_Details_DF")

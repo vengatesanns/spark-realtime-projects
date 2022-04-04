@@ -14,8 +14,8 @@ object RailwaysDataFlatteningUsingDF {
 
   Logger.getLogger("org").setLevel(Level.ERROR)
 
-  //  val ROOT_FOLDER = "/home/vengat/big_data/projects/spark_jars"
-  val ROOT_FOLDER = "src/main/resources"
+  val ROOT_FOLDER = "/home/vengat/big_data/projects/spark_jars"
+  //  val ROOT_FOLDER = "src/main/resources"
 
   def main(args: Array[String]): Unit = {
 
