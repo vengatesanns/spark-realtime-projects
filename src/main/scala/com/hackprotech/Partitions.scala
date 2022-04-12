@@ -13,6 +13,7 @@ object Partitions extends App {
 
   val numbersRDD = spark.sparkContext.parallelize(Range(0, 10))
 
+  println(numbersRDD.getNumPartitions)
   numbersRDD.saveAsTextFile("target/sample_op")
 
 }
