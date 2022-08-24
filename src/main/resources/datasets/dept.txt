@@ -1,0 +1,4 @@
+dept_id|dept_name
+100   |IT
+200   |HR
+300   |TESTING

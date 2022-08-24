@@ -1,6 +1,6 @@
 name := "spark-realtime-projects"
 organization := "com.hackprotech"
-version := "3.0.0"
+version := "4.0.0"
 autoScalaLibrary := true
 scalaVersion := "2.12.15"
 
